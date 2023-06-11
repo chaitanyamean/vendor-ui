@@ -148,8 +148,8 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Item
-              title="Vendor Compare"
-              to="/vendor-compare"
+              title="Find Vendor alternative with Generative AI"
+              to="/vendor-alternative"
               icon={<ReceiptOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}

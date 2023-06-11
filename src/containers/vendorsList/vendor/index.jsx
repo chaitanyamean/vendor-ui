@@ -172,7 +172,7 @@ const VendorDetails = () => {
           />
         </Box> */}
 
-        <button onClick={() => handleClick()}>Click here</button>
+        {/* <button onClick={() => handleClick()}>Click here</button> */}
 
       </Box>
 

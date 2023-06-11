@@ -31,7 +31,6 @@ const Dashboard = () => {
     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
-        {/* <Header title="Vendor Dashboard" subtitle="Welcome to vendor dashboard" /> */}
 
         <Box mb="30px">
           <Typography

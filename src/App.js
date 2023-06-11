@@ -3,18 +3,12 @@ import { Routes, Route } from "react-router-dom";
 import Topbar from "./global/Topbar";
 import Sidebar from "./global/Sidebar";
 import Dashboard from "./containers/Dashboard";
-// import Team from "./scenes/team";
-// import Invoices from "./scenes/invoices";
-// import Contacts from "./scenes/contacts";
-// import Bar from "./scenes/bar";
-// import Form from "./scenes/form";
-// import Line from "./scenes/line";
-// import Pie from "./scenes/pie";
-// import FAQ from "./scenes/faq";
+
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import VendorList from "./containers/vendorsList";
 import VendorDetails from "./containers/vendorsList/vendor";
+import VendorAlternative from "./containers/VendorAlternative/VendorAlternative";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -33,7 +27,10 @@ function App() {
               {/* <Route path="/team" element={<Team />} /> */}
               <Route path="/vendor-details" element={<VendorList />}></Route>
               <Route path="/vendor-details/:id" element={<VendorDetails />} />
-              {/* <Route path="/vendor-compare" element={<Invoices />} /> */}
+              <Route
+                path="/vendor-alternative"
+                element={<VendorAlternative />}
+              />
               {/* <Route path="/vendor-onboarding" element={<Form />} /> */}
               {/* <Route path="/products" element={<Form />} />  */}
 
