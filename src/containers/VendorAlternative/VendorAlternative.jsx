@@ -170,7 +170,7 @@ const VendorAlternative = () => {
       <Box mt="30px" m="20px">
 
         {response && response.length > 0 ?
-          <div>{response}</div>
+          <div style={{ fontSize: '16px' }}>{response}</div>
           : ""}
 
         {isLoading && isLoading == true ? 'Loading please wait...' : ''}

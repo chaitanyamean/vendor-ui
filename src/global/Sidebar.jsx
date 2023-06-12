@@ -139,7 +139,12 @@ const Sidebar = () => {
               icon={<PersonOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
+            >
+              <a
+                href="/vendor-onboarding"
+
+              ></a>
+            </Item>
             <Item
               title="Vendor Details"
               to="/vendor-details"

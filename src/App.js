@@ -32,7 +32,6 @@ function App() {
                 path="/vendor-alternative"
                 element={<VendorAlternative />}
               />
-              {/* <Route path="/vendor-onboarding" element={<Form />} /> */}
               <Route path="/vendor-onboarding" element={<Form />} />
 
               {/* <Route path="/bar" element={<Bar />} />
