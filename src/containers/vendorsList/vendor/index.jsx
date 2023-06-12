@@ -14,6 +14,7 @@ import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
 import DraftsIcon from '@mui/icons-material/Drafts';
 import MailLockIcon from '@mui/icons-material/MailLock';
 import ScartedAreaChart from '../../../components/ScartedAreaChart';
+import PieChartWithNeedle from '../../../components/PieChartWithNeedle';
 import axios from 'axios'
 const VendorDetails = () => {
 
@@ -130,6 +131,36 @@ const VendorDetails = () => {
               />
             }
           />
+        </Box>
+
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          {/* <StatBox
+            title="20"
+            subtitle="Tickets Closed"
+            progress="0.20"
+            increase="20%"
+            icon={
+              <MailLockIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          /> */}
+
+          {/* <Typography
+            variant="h6"
+            fontWeight="200"
+            sx={{ marginBottom: "15px" }}
+          >
+            Tickets Types Stats
+          </Typography> */}
+
+          <PieChartWithNeedle />
         </Box>
 
         <Box

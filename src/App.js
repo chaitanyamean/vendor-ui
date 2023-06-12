@@ -9,6 +9,7 @@ import { ColorModeContext, useMode } from "./theme";
 import VendorList from "./containers/vendorsList";
 import VendorDetails from "./containers/vendorsList/vendor";
 import VendorAlternative from "./containers/VendorAlternative/VendorAlternative";
+import Form from "./components/Form";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -32,7 +33,7 @@ function App() {
                 element={<VendorAlternative />}
               />
               {/* <Route path="/vendor-onboarding" element={<Form />} /> */}
-              {/* <Route path="/products" element={<Form />} />  */}
+              <Route path="/vendor-onboarding" element={<Form />} />
 
               {/* <Route path="/bar" element={<Bar />} />
               <Route path="/pie" element={<Pie />} />

@@ -6,6 +6,7 @@ import { mockDataContacts } from "../../data/mockData";
 import { useTheme } from "@mui/material";
 import { useNavigate, createSearchParams } from "react-router-dom";
 import { Outlet } from "react-router-dom"
+import { COLUMNS_DIMENSION_PROPERTIES } from "@mui/x-data-grid/hooks/features/columns/gridColumnsUtils";
 
 const VendorList = () => {
   const theme = useTheme();
@@ -47,18 +48,26 @@ const VendorList = () => {
       headerName: "Zip Code",
       flex: 1,
     },
+    {
+      field: "action",
+      headerName: "Action",
+      flex: 1,
+    },
   ];
 
   const handleOnCellClick = (params) => {
     // setUserList(params);
     // history('/pages/IndividualUsers');
-
+    console.log(params)
     const currentRow = params.row;
     console.log(currentRow)
-    const options = {
-      pathname: `/vendor-details/${currentRow.vendorId}`,
-    };
-    navigate(options, { replace: true });
+    if (params.row.name === 'Zendesk') {
+
+      const options = {
+        pathname: `/vendor-details/${currentRow.vendorId}`,
+      };
+      navigate(options, { replace: true });
+    }
   };
 
   return (
